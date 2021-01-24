@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color:#e5e5e5 ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    
+}
+
+
+
+.menu {
+    width: 358px;
+    padding: 0px;
+    margin: 50px auto;
+    background: #CCCCCC;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.menu a {
+    background-color: #cccccc;
+    color:#000000; 
+    display: block; 
+    padding: 10px 20px 10px 20px;
+    margin: 0; 
+    text-decoration: none; 
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.menu a:first-child{
+    border-radius: 10px 10px 0px 0px;
+}
+.menu a:last-child{
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.menu a:hover, .menu a:focus{
+    background-color: #9C9C9C; 
+}
+
+
+
+/*Стили формы*/
+
+
+h2{
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+}
+        
+.form{
+    background-color: #9C9C9C;
+    height: 448px;
+    width: 400px;
+    border-radius: 3px;
+    border: 2px solid #626262
+
+}
+
+.form__title{
+    font-weight: 500; 
+    font-size: 2.29rem;
+    line-height: 37px;
+    margin: 0;
+    padding: 20px;
+    }
+
+.form__fields-wrapper{
+    padding: 20px;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.form__password-wrapper{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.form__password:first-child{
+padding-right: 5px;
+}
+
+.form__password:last-child{
+padding-left: 5px;
+}
+
+.form__password{ 
+    width: 50%;   
+}
+
+
+  
+
+.form__field {
+    height: 21px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #9C9C9C;
+    margin-bottom: 20px;
+    padding: 6px 10px;
+    
+}
+
+
+.form__label{
+    color: #3A3A3A;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+.form__buttons {
+padding: 20px;
+display: flex;
+justify-content: space-between;
+}
+  
+.form__buttons-item {
+padding: 8px 12px;
+text-align: center;
+border-radius: 3px;
+cursor: d3;
+}
+    
+.form__buttons-item_dark {
+color: #cccccc;
+background: #616161;
+border: 1px solid #616161;
+}
+    
+.form__buttons-item_light {
+background: #cccccc;
+border: 1px solid #cccccc;
+color: #616161;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Stepper*/
+
+.wrapper{
+
+    display: block;
+
+
+}
+
+
+
+.arrows{
+    width: 920px;
+}
+
+
+.box {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.box-item {
+	display: block;
+	position: relative;
+	float: left;
+	width: calc(100% / 3 );
+	height: 60px;
+	margin-right: 10px;
+	padding: 0 10px;
+	background: linear-gradient(180deg, #686868 0%, #B3B3B3 50.52%, #686868 100%);
+	
+}
+
+.box-item:before {
+	content: '';
+	position: absolute;
+	right: -9px;
+	
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 10px solid;
+    
+    border-color: linear-gradient(180deg, #686868 0%, #b3b3b3 50.52%, #686868 100%) ;
+}
+
+.box-item:after {
+	content: '';
+	position: absolute;
+	left: -1px;
+	height: 0;
+	width: 0;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 10px solid #e5e5e5 ;
+
+    
+}
+
+.box-item:first-child:after {
+	display: none;
+}
+
+.box-item:last-child {
+	margin-right: 0;
+}
+
+.box-item:last-child:before {
+	display: none;
+}
